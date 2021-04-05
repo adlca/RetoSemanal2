@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opcion 3</title>
+    <style>
+        main {
+            margin: 0 auto;
+            width: 400px;
+
+        }
+        form {
+            padding: 20px;
+            font-family: arial;
+            font-size: 12px;
+            margin-left: 10px;
+            background: rgb(214, 229, 255);
+        }
+        form label {
+            font-weight: bold;
+            padding-left: 10px;
+            color: rgb(92, 92, 92);
+
+        }
+
+        button {
+            background: rgb(44, 141, 252);
+            border-radius: 4px;
+            border: 0;
+            padding: 10px 15px;
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        textarea {
+            padding: 10px;
+              width: 90%;
+        }
+
+        .basic_input {
+            width: 90%;
+            height: 25px;
+            padding: 3px 10px;
+            border: 1px solid #adacacd2;
+            border-radius: 3px;
+            background-color: white;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <form>
+                <h3>Contact Form</h3>
+
+                <label for="first">First name</label>
+                <input type="text" class="basic_input" placeholder="John" name="first" id="first" pattern="[A-Z a-z]{7,}"
+                    title="Longitud minima de 7 caracteres" required>
+
+                <label for="lastname">Last Name</label>
+                <input type="text" class="basic_input" placeholder="Doe" name="last" id="lastname" pattern="[A-Z a-z]{7,}"
+                    title="Longitud minima de 7 caracteres" required>
+
+                <label for="email">Email</label>
+                <input type="email" class="basic_input" placeholder="you@domain.com" minlength="7" id="email"
+                    pattern="[A-Z a-z 0-9]{1,}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea name="informacion" id="message" cols="45" rows="10" placeholder="Enter your message here..."
+                    pattern="[A-Z a-z]{20,140}" minlength="20" maxlength="140" required></textarea>
+
+                <div style="text-align: center;"><button>Submit</button></div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
